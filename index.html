@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ultron</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="circle.css">
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+
+</head>
+</head>
+
+<body>
+    <div class="main-screen">
+        <div class="weather_date">
+            <div id="weather">
+                <div class="city-box">
+                    <div class="city" id="city"></div>
+                    <div class="search-box" id="search-box">
+                        <input type="text" id="cityQuery" class="cityQuery" />
+                        <img src="./search.png" class="search_icon" id="search_icon" onclick="setCity();">
+
+                        <img src="./search.png" alt="" id="open-icon" class="open-icon" onclick="openInput();">
+                    </div>
+
+                    <img src="./cross.png" class="cross" id="cross" onclick="closeInput()">
+                </div>
+                <div class="temp-box">
+                    <div id="temp" class='temp'>
+                    </div>
+                </div>
+                <div class="conditions">
+                    <div class="status">
+                        <div id="desc" class="desc"></div>
+
+                        <div id="pressure" class="pressure"></div>
+                        <div class="humidity" id="humidity"></div>
+                    </div>
+                    <img src="" id="wicon" class="wicon">
+
+                    <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+                </div>
+            </div>
+            <div class="folders">
+                <div class="folder _c">
+                    <p>C</p>
+                    <span class="C size">
+
+                    </span>
+                </div>
+                <div class="folder _d">
+                    <p>D</p>
+                    <span class="D size">
+
+                    </span>
+                </div>
+
+
+                <div class="folder _e">
+                    <p>E</p>
+                    <span class="E size">
+
+                    </span>
+                </div>
+            </div>
+            <div class="netstat">
+                <div class="todo" id="todo"></div>
+                <form action="" id="todo_form">
+                    <input type="text" id="work" />
+                    <button type="submit"><img src="send.png" style="width: 15px; height: 15px;" alt=""></button>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="middle-box">
+
+            <div class="date" id="date"></div>
+
+            <img src="ultron.png" id='logo' class="logo" />
+
+            <div class="pc-stats">
+                <div class="cpu">
+                    <div id="circle" class="c100 p100">
+                        <span id="circle-percent">100%</span>
+
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ram">
+                    <div id="myChart" style="height: 370px; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="terminal">
+            <div class="terminal_top">
+                <div id="time">
+                </div>
+                <a href="./configure.html">
+                    <img src="setting.png" class="setting">
+                </a>
+            </div>
+
+            <div class="terminal_text" id="terminal_text">
+            </div>
+
+
+
+            <input style="display:none;" type="file" id="file">
+
+            <button id="uploader" type="button">Upload any image</button>
+        </div>
+
+
+    </div>
+    <script src="./index.js">
+    </script>
+
+</body>
+
+</html>

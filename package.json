@@ -1,0 +1,24 @@
+{
+    "name": "ultron",
+    "version": "1.0.0",
+    "main": "main.js",
+    "devDependencies": {
+        "electron": "^11.2.0"
+    },
+    "scripts": {
+        "start": "electron .",
+        "ng:serve": "ng serve --port 4201",
+        "electron:serve": "wait-on http-get://localhost:4201/ && npm run electron:serve-tsc && electron . --serve"
+    },
+    "dependencies": {
+        "brain.js": "^2.0.0-beta.2",
+        "check-disk-space": "^2.1.0",
+        "firebase": "^8.2.9",
+        "fs-js": "^1.0.6",
+        "health-monitor": "^0.1.0",
+        "os-utils": "^0.0.14",
+        "python-shell": "^2.0.3",
+        "system": "^2.0.1",
+        "system-health-monitor": "^1.2.1"
+    }
+}

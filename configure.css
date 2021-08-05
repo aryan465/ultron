@@ -1,0 +1,113 @@
+.config-box{
+    width:70%;
+    height:80%;
+   
+    position:absolute;
+    top: 10%;
+    left : 15%;
+    box-shadow: 0px 2px 5px rgb(14, 228, 236) , -2px -2px 3px rgb(124, 181, 255);
+    display: flex;
+    align-items: center;
+}
+
+.options{
+    width:30%;
+    height:100%;
+    box-shadow: 0px 0px 7px rgb(4, 107, 148) ;
+    text-align: center;
+    
+    
+
+}
+.options ul{
+    margin:5px 10px;
+    list-style: none;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 98%;
+    
+}
+.options li{
+    margin: 20px 0;
+    letter-spacing: 1.1px;
+    font-weight: lighter;
+    flex: 2;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.options li:hover{
+    transform:scale(1.1)
+}
+
+.options li:first-child{
+    font-weight:normal;
+    cursor:default;
+    color: rgb(182, 185, 185);
+    
+}
+.options li:first-child:hover{
+    transform:scale(0.99)
+}
+
+.current-option{
+    width:70%;
+    height:100%;
+    letter-spacing: 1.1px;
+    font-weight: lighter;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    position: relative;
+}
+
+.current-option_name{
+   position:absolute;
+   letter-spacing: 1.5px;
+   font-weight: normal;
+   top:20px;
+
+}
+textarea{
+    color: white;
+    font-size:15px;
+    letter-spacing: 1.5px;
+    font-weight: lighter;
+    position: absolute;
+    resize: none;
+    top:25%;
+    height: 30%;
+    width: 80%;
+    background: #8ae4ff10;
+    box-shadow: 1px 1px 2px rgb(14, 184, 236)  , -1px -1px 2px rgb(149, 186, 255);
+
+    border:0;
+    outline: 0;
+}
+textarea::-webkit-scrollbar{
+    width: 0;
+}
+.current-option button{
+    
+    border: 0;
+    outline: 0;
+   
+        
+}
+.current-option img{
+    width:30px;
+    position:absolute;
+    bottom:2%;
+    right: 3%;
+    cursor: pointer; 
+}
+.current-option_current{
+    position:absolute;
+    bottom:20%;
+    font-size:12px;
+}
+
+.active{
+    color:cyan
+}

@@ -1,0 +1,429 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body{
+    height: 99.2vh;
+    
+    color:aliceblue;
+    background : #00191f;
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    justify-content: center;
+
+overflow-y: hidden;
+}
+
+/* whole screen */
+.main-screen
+{   width: 100%;
+    box-shadow: 2px 2px 5px rgb(75, 75, 75) , -2px -2px 5px rgb(206, 206, 206);
+
+    display: flex;
+    align-items: center;
+    height: 99%;
+    width: 99%;
+    border-radius: 8px;
+    
+}
+/* whole screen */
+
+
+
+/* Middle box here  */
+.middle-box{
+    width: 40vw;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.date{
+    width: fit-content;
+    height: 5vh;
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 0.13rem;
+}
+.logo{
+    width: 180px;
+    height: 180px;
+    margin-top: 22vh ;
+}
+
+
+
+.pc-stats{
+    margin-top: auto;
+    width: 98%;
+    height: 20vh;
+   
+    display: flex;
+    justify-content: space-evenly;
+}
+.cpu{
+    width: 48%;
+    height: 98%;
+ 
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex: 1;
+}
+.ram{
+    width:48%;
+    height: fit-content;
+    flex: 5;
+  
+}
+
+
+/* middle box ends */
+
+
+/* right most box ( termianl) starts  */
+.terminal{
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+    border-radius: 8px;
+    width: 35vw;
+    height:96vh;
+    margin: 0 7px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   /* box-shadow: 1px 1px 2px rgb(14, 192, 236) , -1px -1px 2px rgb(149, 216, 255); */
+   background: linear-gradient(to top right , rgba(90, 90, 90, 0.7), rgba(30, 101, 134,0.4));
+    box-shadow: 1px 1px 7px rgb(14, 236, 199) , -1px -2px 7px rgb(149, 255, 250);
+}
+
+.terminal_text{
+  
+    width: 98%;
+ 
+    margin-top:2vh;
+    min-height: 87%;
+}
+
+.terminal_top{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items: center
+
+}
+
+.setting{
+    width: 30px;
+    height:30px;
+    
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    /* filter: hue-rotate(25deg); */
+    
+}
+
+
+.terminal button{
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+    margin-top: auto;
+  
+    border: 0;
+    color: white;
+    height: 5%;
+    width: 100%;
+    
+    background: #138b7b;
+    margin-bottom: 0px;
+    padding: 0;
+    border-radius:  4px  4px 8px 8px ;
+    box-shadow: 0px 2px 5px rgb(14, 236, 199) , 0px 0px 1px rgb(149, 255, 250);
+
+}
+.terminal #time{
+    margin: 2px ;
+
+    font-size: 1.3rem;
+
+}
+/* terminal ends */
+
+
+
+
+
+
+/* leftmost box starts here */
+.weather_date{
+    height: 96vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    
+    display: flex;
+    flex-direction: column;
+    
+    /* box-shadow: 1px 1px 7px rgb(14, 236, 206) , -1px -2px 7px rgb(137, 248, 233); */
+    /* box-shadow: 2px 2px 5px rgb(75, 75, 75) , -2px -2px 5px rgb(206, 206, 206); */
+}
+
+
+/* weather data starts here  */
+#weather{
+    width: 22vw;
+    height: fit-content;
+   
+    margin-bottom: auto;
+    /* box-shadow: 2px 2px 5px rgb(236, 31, 157) , -2px -2px 5px rgb(255, 175, 224); */
+    box-shadow: 1px 1px 2px rgb(14, 236, 199)  , -1px -1px 2px rgb(149, 255, 250);
+    background: linear-gradient(to top right , rgba(90, 90, 90, 0.7), rgba(30, 101, 134,0.4));
+
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition:all 0.2s ease
+}
+#weather:hover{
+    transform: scale(1.02)
+}
+#weather .temp-box{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    
+}
+#weather .temp-box .temp{
+    font-size: 1.2rem;
+}
+#weather .conditions .wicon{
+    width: 45px;
+    height: 45px;
+    margin: 0 0px 0 30px;
+}
+#weather .conditions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: fit-content 
+}
+#weather .conditions .status{
+    display: flex;
+    flex-direction: column;
+}
+#weather .status .desc{
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 8px;
+    font-size: 1.2rem;
+}
+#weather .status .pressure{
+    margin: 10px 5px;
+    font-size: 0.9rem;
+}
+#weather .status .humidity{
+    margin:5px 5px;
+    font-size: 0.9rem;
+}
+#weather .city-box{
+    width: fit-content;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 8px;
+    margin-top: 10px;
+    font-size: 1.13rem;
+}
+#weather .city-box .city{
+    margin-right: 10px;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+ border:0;
+    border-radius: 4px;
+    height: 30px;
+    width: fit-content;
+}
+.search-box.open-box{
+    border: 2px solid whitesmoke;
+}
+.cityQuery{
+    background: rgba(19, 18, 18, 0.699);
+    border : 0;
+    height: 28px;
+    width: 0px;
+    color: whitesmoke;
+    font-size: 1rem;    
+    transition: all 0.35s ease-out;
+}
+.cityQuery.open{
+    width: 200px;
+}
+.cross{
+    cursor: pointer;
+    width: 15px;  
+    height: 15px;
+    margin-left: 8px;
+    margin-right: 4px;
+    display: none;
+    transition: all 0.3s ease-out; 
+}
+.cross.show{
+    display: inline-block;
+}
+.search_icon{
+    width: 20px;  
+    height: 20px;
+    margin-left: 8px;
+    margin-right: 4px;
+    cursor: pointer;
+    display: none;
+    
+}
+.search_icon.open-search{
+    display: inline-block;
+}
+.open-icon{
+    width: 20px;  
+    height: 20px;
+    margin-left: 8px;
+    margin-right: 4px;
+    cursor: pointer;    
+}
+.open-icon.close-icon{
+    display: none;
+}
+/* weather data ends here */
+
+.folders{
+    min-height:200px;
+    width:22vw;
+    margin-left: 5px;
+    /* box-shadow: 2px 2px 3px rgb(75, 75, 75) , -2px -2px 3px rgb(206, 206, 206); */
+
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center
+
+
+}
+.folder{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 6vw;
+    height: 70%;
+    box-shadow: 1px 1px 2px rgb(14, 236, 199)  , -1px -1px 2px rgb(149, 255, 250);
+
+    background: linear-gradient(to top right , rgba(46, 46, 46,0.7), rgba(30, 101, 134,0.2));
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position:relative;
+    
+}
+
+.size{
+    width: 100%;
+    
+    margin-top:auto;
+    background:rgb(19, 139, 123);
+  
+    text-align: center;
+}
+.folder >p{
+    position: absolute
+}
+.folder:hover{
+    transform: scale(1.1);
+}
+
+/* internet stats start here */
+.netstat{
+    width:22vw;
+    max-height: 58vh;
+    min-height: 33vh;
+
+    /* box-shadow: 2px 2px 5px rgb(75, 75, 75) , -2px -2px 5px rgb(206, 206, 206); */
+    /* box-shadow: 2px 2px 5px rgb(229, 245, 8), -2px -2px 5px  rgb(238, 243, 169); */
+    box-shadow: 1px 1px 2px rgb(14, 236, 199)  , -1px -1px 2px rgb(149, 255, 250);
+    background: linear-gradient(to top right , rgba(90, 90, 90, 0.7), rgba(30, 101, 134,0.4));
+    margin-left: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.netstat .todo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    
+}
+.todo::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+  }
+  
+#todo_items{
+    
+    width: 98%;
+    height: 30px;
+    border-bottom: 2px groove #022f3a;
+    border-top: 0;
+    display: flex;
+    align-items:center
+}
+.netstat form{
+    margin-top:auto;
+    width: 100%;
+    display: flex;
+    align-items:center
+}
+
+.netstat form input{
+    flex: 1;
+    background: rgba(19, 19, 18, 0.699);
+    border : 0;
+    height: 20px;
+    width: 0px;
+    color: whitesmoke;
+    font-size: 1rem;    
+    outline:0;
+}
+
+.netstat form button{
+    background: rgba(19, 19, 18, 0.699);
+    border : 0;
+    outline:0;
+    cursor : pointer;
+
+}
+
+.netstat form button img{
+    /* filter: invert(0.8); */
+    filter: hue-rotate(10deg);
+}
+
+.done{
+   text-decoration: line-through;
+   
+}
+.done .done-text{
+    opacity: 0.5;
+}
+
+/* internet stats ends here */
+
