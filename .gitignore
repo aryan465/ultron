@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # repository
-.vscode
-__pycache__
+/.vscode
+/__pycache__
