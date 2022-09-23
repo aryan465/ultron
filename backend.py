@@ -223,22 +223,24 @@ if __name__ == "__main__":
             soup_page = soup(page.text, 'html.parser')
 
             divs = list()
+            sdiv = list()
 
             for index, div in enumerate(soup_page.find_all('div', class_='views-field views-field-php-2')):
                 news = div.find('span', class_="field-content")
                 divs.append(f"{index+1}. {news.text}")
+                sdiv.append(news.text)
 
-            speech_rate = 175
+            speech_rate = 160
             engine.setProperty('rate', speech_rate)
             news_string = ''
             try:
-                news_string += "<br>".join(divs[:2])
+                news_string += "<br><br>".join(divs[:3])
                 print(news_string)
                 sys.stdout.flush()
                 time.sleep(0.45)
 
-                for i in range(2):
-                    speak(divs[i])
+                for i in range(3):
+                    speak(sdiv[i])
 
             except:
                 print("Sorry, I couldn't find sufficient news on that topic!")

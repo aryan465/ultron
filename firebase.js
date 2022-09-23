@@ -1,5 +1,3 @@
-
-
 const firebase = require('firebase')
 
 const firebaseApp = firebase.initializeaApp({

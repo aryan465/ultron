@@ -203,8 +203,8 @@ overflow-y: hidden;
     font-size: 1.2rem;
 }
 #weather .conditions .wicon{
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
     margin: 0 0px 0 30px;
 }
 #weather .conditions{
