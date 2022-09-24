@@ -443,7 +443,7 @@ const deleteTodo = (ev) => {
     let data = ""
     json.map((doc, id) => {
         if (id !== json.length - 1) {
-            data += `<div id="todo_items" class=${!doc.done || "done"} ><div style='flex:1' class="done-todo">${doc.Text}</div><img id= 'c${doc.id}' src='images/checked.png' onclick="checkTodo(this);"  style='width:15px; height:15px; cursor:pointer ' /><img id=${doc.id}  onclick="deleteTodo(this);" src='/images/delete.png' style='width:15px; height:15px; cursor:pointer; margin-left:12px; margin-right:3px ' /></div>`
+            data += `<div id="todo_items" class=${!doc.done || "done"} ><div style='flex:1' class="done-todo">${doc.Text}</div><img id= 'c${doc.id}' src='images/checked.png' onclick="checkTodo(this);"  style='width:15px; height:15px; cursor:pointer ' /><img id=${doc.id}  onclick="deleteTodo(this);" src='images/delete.png' style='width:15px; height:15px; cursor:pointer; margin-left:12px; margin-right:3px ' /></div>`
         }
     })
     todo_box.innerHTML = data
@@ -472,7 +472,7 @@ const checkTodo = (ev) => {
     let data = ""
     json.map((doc, id) => {
         if (id !== json.length - 1) {
-            data += `<div id="todo_items" class=${!doc.done || "done"} ><div style='flex:1' class"done-todo">${doc.Text}</div><img id= 'c${doc.id}' src='/imageschecked.png' onclick="checkTodo(this);"  style='width:15px; height:15px; cursor:pointer ' /><img id=${doc.id}  onclick="deleteTodo(this);" src='delete.png' style='width:15px; height:15px; cursor:pointer; margin-left:12px; margin-right:3px ' /></div>`
+            data += `<div id="todo_items" class=${!doc.done || "done"} ><div style='flex:1' class"done-todo">${doc.Text}</div><img id= 'c${doc.id}' src='images/checked.png' onclick="checkTodo(this);"  style='width:15px; height:15px; cursor:pointer ' /><img id=${doc.id}  onclick="deleteTodo(this);" src='images/delete.png' style='width:15px; height:15px; cursor:pointer; margin-left:12px; margin-right:3px ' /></div>`
         }
     })
     todo_box.innerHTML = data
@@ -489,7 +489,7 @@ function renderTodos(json) {
     json.map((doc, id) => {
 
         if (id !== json.length - 1) {
-            data += `<div id="todo_items" class=${!doc.done || "done"} ><div style='flex:1' class="done-todo">${doc.Text}</div><img id= 'c${doc.id}' src='images/checked.png' onclick="checkTodo(this);"  style='width:15px; height:15px; cursor:pointer ' /><img id=${doc.id}  onclick="deleteTodo(this);" src='delete.png' style='width:15px; height:15px; cursor:pointer; margin-left:12px; margin-right:3px ' /></div>`
+            data += `<div id="todo_items" class=${!doc.done || "done"} ><div style='flex:1' class="done-todo">${doc.Text}</div><img id= 'c${doc.id}' src='images/checked.png' onclick="checkTodo(this);"  style='width:15px; height:15px; cursor:pointer ' /><img id=${doc.id}  onclick="deleteTodo(this);" src='images/delete.png' style='width:15px; height:15px; cursor:pointer; margin-left:12px; margin-right:3px ' /></div>`
 
         }
     })
