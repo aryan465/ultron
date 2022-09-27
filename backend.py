@@ -230,6 +230,7 @@ if __name__ == "__main__":
                 divs.append(f"{index+1}. {news.text}")
                 sdiv.append(news.text)
 
+            print("sdiv", sdiv, end="\n")
             speech_rate = 160
             engine.setProperty('rate', speech_rate)
             news_string = ''
